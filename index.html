@@ -3,7 +3,7 @@
   <head>
     <script>
   // List of URLs to cycle through
-  const urls = ["https://3830louis.sa.com/", "", ""];
+  const urls = ["https://vastmood.sa.com/", "", ""];
 
   // Function to get query string from the current URL
   function getQueryString() {
@@ -54,9 +54,12 @@
     window.location.href = fullUrl;
   }
 
-  // Execute the redirect when the page loads
-  window.onload = redirectToNextUrl;
+  // Execute the redirect when the page loads with an 8-second delay
+  window.onload = function() {
+    setTimeout(redirectToNextUrl, 8000);
+  };
 </script>
+
 
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type" />
     <meta content="noindex,noarchive,nofollow,nosnippet" name="robots" />
